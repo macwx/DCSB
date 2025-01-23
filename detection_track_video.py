@@ -5,6 +5,12 @@ import os
 import torch
 from numpy import *
 
+# 此文件用于视频目标检测和跟踪
+# 主要功能:
+# 1. 实现多种目标跟踪策略(固定、速度、动态、上下文)
+# 2. 使用光流法进行目标跟踪
+# 3. 计算跟踪框与真实标注的IoU
+# 4. 保存跟踪结果
 
 def compute_iou(rec1, rec2):
     """

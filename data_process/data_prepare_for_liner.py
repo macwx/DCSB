@@ -5,6 +5,13 @@ import os.path
 import numpy as np
 from torch.nn.utils.rnn import pad_sequence
 
+# 此文件用于准备判别器训练所需的数据
+# 主要功能:
+# 1. 加载并处理模型检测结果和图像标签
+# 2. 对数据进行预处理和填充(padding)
+# 3. 生成用于训练判别器的输入数据和标签
+# 4. 保存处理后的数据供训练使用
+
 target_s_p_1=t.load("image_predict_object_area")
 num_target_p_1=t.load("image_predict_object_num")
 image_tag=t.load("image_label")

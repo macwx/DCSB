@@ -2,6 +2,14 @@ from discriminator import Discriminator
 import torch
 import numpy as np
 import time
+
+# 此文件用于评估判别器模型性能
+# 主要功能:
+# 1. 加载训练好的判别器模型
+# 2. 在测试集上评估模型性能
+# 3. 计算各项评估指标(准确率、精确率、召回率等)
+# 4. 统计目标检测数量和上传比例
+
 def metric(x,y,target_num_big_data,target_num_small_data):
     TP=0
     FP=0

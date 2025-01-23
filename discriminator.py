@@ -5,6 +5,13 @@ import torch.utils.data as Data
 from tqdm import *
 import os
 
+# 此文件实现了判别器模型
+# 主要功能:
+# 1. 定义判别器网络结构(多层神经网络)
+# 2. 实现模型训练流程
+# 3. 使用训练数据训练判别器
+# 4. 保存训练好的模型权重
+
 class Discriminator(nn.Module):
     def __init__ (self):
         dim_num = [input_dim, 10]
